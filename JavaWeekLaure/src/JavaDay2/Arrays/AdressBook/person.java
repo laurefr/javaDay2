@@ -7,27 +7,25 @@ public class person {
 
     private String firstName;
     private String lastName;
-    private int Age;
+    public int Age;
     char gender;
-    private double height;
-    private boolean Smoker;
-  private boolean available;
+    double height;
+    boolean Smoker;
+    boolean available;
 
 
-    public person()
-    {
-        available = true;
+    public person() {available = true;}
 
-    }
+
     public person (String fn, String ln)
     {
         this.firstName=fn;
         this.lastName=ln;
     }
 
-    public person (String fn , String ln,  int age,char gender, double Height, boolean smoker )
+    public person (String fn , String ln, int age,char gender, double Height, boolean smoker )
     {
-
+        this();
         this. firstName = fn;
         this.lastName = ln;
         this.Age = age;
@@ -38,6 +36,7 @@ public class person {
     }
 
     public void setName ( String fn, String ln,int age, char gender,double Height, boolean smoker){
+
 
         this. firstName = fn;
         this.lastName = ln;

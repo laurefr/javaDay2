@@ -46,6 +46,7 @@ public class AddressBook {
         }
         fileReader.close();
     }
+
     public void sortByLastName()
     {
         for(int i=0; i< counter -1; i++)
